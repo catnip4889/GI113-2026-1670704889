@@ -45,6 +45,11 @@ namespace Lab02
             Console.WriteLine($"===== BOSS STATUS: AFTER DAMAGE =====");
             Console.WriteLine($"HP: {currentHp} / {maxHp}");
             Console.WriteLine($"HP Percent: {hpPercent}%");
+
+            Console.WriteLine($"===== Slime Escape =====");
+
+            string name1 = "Little Slime";
+            char 
         }
     }
 }
