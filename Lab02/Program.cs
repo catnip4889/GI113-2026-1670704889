@@ -47,9 +47,19 @@ namespace Lab02
             Console.WriteLine($"HP Percent: {hpPercent}%");
 
             Console.WriteLine($"===== Slime Escape =====");
+;
+            string name = "Little Slime";
+            char rank = 'N';
+            int level = 1;
+            int maxHp = 20;
+            float attackPower = 5.0f;
+            float critRate = 10.5f;
+            double critMultiplier = 1.25;
+            double critDamage = attackPower * critMultiplier;
+            bool playable = true;
 
-            string name1 = "Little Slime";
-            char 
+            Console.WriteLine($"\nName : {name} \nRank : {rank} \nLevel : {level} \nHP : {maxHp} \nATK : {attackPower} \nCrit Rate : {critRate} \nCrit Damage : {critDamage} \nIs Playable : {playable}")
+
         }
     }
 }
