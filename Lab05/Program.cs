@@ -36,6 +36,11 @@ internal class program
         Console.WriteLine($"[Monster]     HP : {monsterHp}, ATK : {monsterAtk}, DEF : {monsterDef}");
 
         //Hero drink potion before the fight (compound assignment: +=)
+        int potionHeal = 14;
+        heroHp += potionHeal;
+        Console.WriteLine($"\nHero drink a potion, healing {potionHeal} HP, Hero HP is : {heroHp}");
+
+        int normalDamage = Math.Max(0, heroAtk - monsterDef);
 
     }
 }
