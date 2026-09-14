@@ -40,7 +40,20 @@ internal class program
         heroHp += potionHeal;
         Console.WriteLine($"\nHero drink a potion, healing {potionHeal} HP, Hero HP is : {heroHp}");
 
+        //Attack
         int normalDamage = Math.Max(0, heroAtk - monsterDef);
+        Console.WriteLine($"Normal attack deals : {normalDamage} DMG");
+        int powerDamage = Math.Max(heroAtk, heroAtk * 2 - monsterDef);
+        Console.WriteLine($"Power attack deals : {powerDamage} DMG");
+        int counterDamage = Math.Max(0, monsterAtk - heroDef);
+        Console.WriteLine($"Counter attack deals : {counterDamage} DMG");
 
+        //Random
+        Random randomSome = new Random();
+        int roll = randomSome.Next(1, 101); //สุ่มเลขต้อง +1 เสมอ EX.1-100 = 1-101
+        bool isCrit = roll <= 10;
+        int critDamage = normalDamage + Convert.ToInt32(isCrit) * powerDamage;
+        Console.WriteLine($"Crit Damage roll : {roll} (Crit : {isCrit})");
+        Console.WriteLine($"If critical, normal attack would deal : {critDamage} DMG");
     }
 }
