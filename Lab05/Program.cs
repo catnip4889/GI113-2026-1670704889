@@ -2,7 +2,7 @@
  * Student ID :  1670704889
  * Name       :  Thunyaphon Amphaphan
  * Section    :  129B
- * No.        :  N/A
+ * No.        :  5
  * Course     : GI113 Computer Programming (GI)
  */
 
@@ -13,13 +13,15 @@ internal class program
         Console.WriteLine("=== BATTLE DAMAGE CALCULATOR ===");
         Console.WriteLine("Hero vs Monster -- Calculate Damage\n");
 
+        //Hero
         Console.Write("Hero HP: ");
         bool heroHpOk = int.TryParse(Console.ReadLine(), out int heroHp);
         Console.Write("Hero Attack: ");
         bool heroAtkOk = int.TryParse(Console.ReadLine(), out int heroAtk);
         Console.Write("Hero Defense: ");
-
         bool heroDefOk = int.TryParse(Console.ReadLine(), out int heroDef);
+
+        //Monster
         Console.Write("Monster HP: ");
         bool monsterHpOk = int.TryParse(Console.ReadLine(), out int monsterHp);
         Console.Write("Monster Attack: ");
@@ -27,7 +29,13 @@ internal class program
         Console.Write("Monster Defense: ");
         bool monsterDefOk = int.TryParse(Console.ReadLine(), out int monsterDef);
 
+        //Check
         bool allStatsValid = heroHpOk && heroAtkOk && heroDefOk && monsterHpOk && monsterAtkOk && monsterDefOk;
         Console.WriteLine($"All stats valid: {allStatsValid}");
+        Console.WriteLine($"[HERO]        HP : {heroHp}, ATK : {heroAtk}, DEF : {heroDef}");
+        Console.WriteLine($"[Monster]     HP : {monsterHp}, ATK : {monsterAtk}, DEF : {monsterDef}");
+
+        //Hero drink potion before the fight (compound assignment: +=)
+
     }
 }
