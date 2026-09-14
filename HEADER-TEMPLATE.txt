@@ -2,6 +2,6 @@
  * Student ID :  1670704889
  * Name       :  Thunyaphon Amphaphan
  * Section    :  129B
- * No.        :  N/A
+ * No.        :  5
  * Course     : GI113 Computer Programming (GI)
  */
