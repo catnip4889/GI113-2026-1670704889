@@ -36,7 +36,27 @@ namespace Assignment02
             double amount = 0;
             bool amountParsed = double.TryParse(amountInput, out amount);
 
-
+            if (amountParsed && amount > 0 && amount <= MaxBatch)
+            {
+                if (menuParsed && (menu == 'S' || menu == 's'))
+                {
+                    double ingot = amount * SmeltRate;
+                    Console.WriteLine($"=> {amount:F2} {MaterialName} Ore = {ingot:F2} {MaterialName} Ingot");
+                }
+                else if (menuParsed && (menu == 'B' || menu == 'b'))
+                {
+                    double ore = amount / SalvageRate;
+                    Console.WriteLine($"=> {amount:F2} {MaterialName} Ingot = {ore:F2} {MaterialName} Ore");
+                }
+                else
+                {
+                    Console.WriteLine("Error: Invalid menu. Please enter S or B.");
+                }
+            }
+            else
+            {
+                Console.WriteLine($"Error: Invalid amount. Enter a number greater than 0 and at most {MaxBatch:F2}.");
+            }
         }
     }
 }
