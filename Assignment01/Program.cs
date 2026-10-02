@@ -12,7 +12,7 @@ internal class Program
         const string GameTitle = "Wuthering Waves";
 
         var name = "Brant";
-        var rank = "S";
+        var rank = 'S';
         int level = 90;
         int maxLevel = 90;
         int hp = 18353;
@@ -36,18 +36,29 @@ internal class Program
         Console.WriteLine($"              ╚███╔███╔╝██║  ██║╚██████╔╝███████╗███████║");
         Console.WriteLine($"               ╚══╝╚══╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝");
 
-        Console.WriteLine($"\nGame Title: {GameTitle}");
-        Console.WriteLine($"Resonator: {name}");
-        Console.WriteLine($"Rank: {rank}");
-        Console.WriteLine($"Lv.: {level}/{maxLevel}");
-        Console.WriteLine($"HP: {hp}");
-        Console.WriteLine($"ATK: {atk}");
-        Console.WriteLine($"DEF: {def}");
-        Console.WriteLine($"Energy Regen: {er}");
-        Console.WriteLine($"Crit.Rate: {critRate}%");
-        Console.WriteLine($"Crit.DMG: {critDmg}%");
-        Console.WriteLine($"Is Playable: {isPlayable}");
+        Console.WriteLine("\n                ╠════════════════════════════════════╣");
+        Console.WriteLine($"                ║Game Title: {GameTitle}         ║");
+        Console.WriteLine($"                ║Resonator: {name}                    ║");
+        Console.WriteLine($"                ║Rank: {rank}                             ║");
+        Console.WriteLine($"                ║Lv.: {level}/{maxLevel}                          ║");
+        Console.WriteLine($"                ║HP: {hp}                           ║");
+        Console.WriteLine($"                ║ATK: {atk}                           ║");
+        Console.WriteLine($"                ║DEF: {def}                           ║");
+        Console.WriteLine($"                ║Energy Regen: {er}                 ║");
+        Console.WriteLine($"                ║Crit.Rate: {critRate}%                    ║");
+        Console.WriteLine($"                ║Crit.DMG: {critDmg}%                    ║");
+        Console.WriteLine($"                ║Is Playable: {isPlayable}                   ║");
+        Console.WriteLine("                ╠════════════════════════════════════╣");
 
+        double levelAsDouble = level;
+        Console.WriteLine($"                ║ Implicit Conversion                ║");
+        Console.WriteLine($"                ║ Level as double : {levelAsDouble}               ║");
 
+        int energyCast = (int)er;
+        int energyConvert = Convert.ToInt32(er);
+        Console.WriteLine("                ╠════════════════════════════════════╣");
+        Console.WriteLine($"                ║ Explicit Cast   : {energyCast}              ║");
+        Console.WriteLine($"                ║ Convert.ToInt32 : {energyConvert}              ║");
+        Console.WriteLine("                ╚════════════════════════════════════╝");
     }
 }
