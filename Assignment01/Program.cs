@@ -35,5 +35,19 @@ internal class Program
         Console.WriteLine($"              ██║███╗██║██╔══██║██║   ██║██╔══╝  ╚════██║");
         Console.WriteLine($"              ╚███╔███╔╝██║  ██║╚██████╔╝███████╗███████║");
         Console.WriteLine($"               ╚══╝╚══╝ ╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝");
+
+        Console.WriteLine($"\nGame Title: {GameTitle}");
+        Console.WriteLine($"Resonator: {name}");
+        Console.WriteLine($"Rank: {rank}");
+        Console.WriteLine($"Lv.: {level}/{maxLevel}");
+        Console.WriteLine($"HP: {hp}");
+        Console.WriteLine($"ATK: {atk}");
+        Console.WriteLine($"DEF: {def}");
+        Console.WriteLine($"Energy Regen: {er}");
+        Console.WriteLine($"Crit.Rate: {critRate}%");
+        Console.WriteLine($"Crit.DMG: {critDmg}%");
+        Console.WriteLine($"Is Playable: {isPlayable}");
+
+
     }
 }
