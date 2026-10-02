@@ -23,6 +23,20 @@ namespace Assignment02
             Console.WriteLine($"=> {MaterialName} Smelting {SmeltRate:F2} / Salvage {SalvageRate:F2}");
             Console.WriteLine("=> Key 'S' for Smelt (Ore -> Ingot)");
             Console.WriteLine("=> Key 'B' for Breakdown (Ingot -> Ore)");
+
+            Console.Write("=> Choose Menu: ");
+            string menuInput = Console.ReadLine() ?? "";
+
+            char menu = '\0';
+            bool menuParsed = char.TryParse(menuInput, out menu);
+
+            Console.Write("=> How much would you like: ");
+            string amountInput = Console.ReadLine() ?? "";
+
+            double amount = 0;
+            bool amountParsed = double.TryParse(amountInput, out amount);
+
+
         }
     }
 }
