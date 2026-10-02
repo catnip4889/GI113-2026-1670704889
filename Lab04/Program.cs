@@ -28,7 +28,15 @@ namespace Lab04
             Console.Write("How many potions? ");
             bool quantityOk = int.TryParse(Console.ReadLine(), out int quantity);
             Console.WriteLine($"Valid input: {quantityOk}");
-            Console.WriteLine($"Quantity: {quantity}");
+            Console.WriteLine($"Quantity: {quantity}\n");
+
+            Console.WriteLine("+------------------------------+");
+            Console.WriteLine("|          SET VOLUME           |");
+            Console.WriteLine("+------------------------------+");
+            Console.Write("Set music volume (0.0-1.0): ");
+            bool volumeOk = double.TryParse(Console.ReadLine(), out double volume);
+            Console.WriteLine($"Valid input: {volumeOk}");
+            Console.WriteLine($"Volume: {volume}");
         }
     }
 }
