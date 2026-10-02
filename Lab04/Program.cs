@@ -20,7 +20,7 @@ namespace Lab04
             bool classOk = int.TryParse(Console.ReadLine(), out int classNum);
             Console.Write("Starting luck (0.0-10.0): ");
             bool luckOk = double.TryParse(Console.ReadLine(), out double luck);
-            Console.WriteLine($"{charName} the Class-{classNum} adventurer enters the dungeon. Luck: {luck}\n");
+            Console.Write($"{charName} the Class-{classNum} adventurer enters the dungeon. Luck: {luck}\n");
 
             Console.WriteLine("+------------------------------+");
             Console.WriteLine("|           ITEM SHOP           |");
@@ -36,7 +36,7 @@ namespace Lab04
             Console.Write("Set music volume (0.0-1.0): ");
             bool volumeOk = double.TryParse(Console.ReadLine(), out double volume);
             Console.WriteLine($"Valid input: {volumeOk}");
-            Console.WriteLine($"Volume: {volume}");
+            Console.WriteLine($"Volume: {volume}\n");
 
             Console.WriteLine("+------------------------------+");
             Console.WriteLine("|         NEW SAVE FILE         |");
