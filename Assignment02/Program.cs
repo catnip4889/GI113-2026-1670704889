@@ -16,7 +16,13 @@ namespace Assignment02
             const double SalvageRate = 0.3000;
             const double MaxBatch = 500.0;
 
+            Console.WriteLine("------------------------------------");
+            Console.WriteLine("------- Welcome to the Forge -------");
+            Console.WriteLine("------------------------------------");
 
+            Console.WriteLine($"=> {MaterialName} Smelting {SmeltRate:F2} / Salvage {SalvageRate:F2}");
+            Console.WriteLine("=> Key 'S' for Smelt (Ore -> Ingot)");
+            Console.WriteLine("=> Key 'B' for Breakdown (Ingot -> Ore)");
         }
     }
 }
