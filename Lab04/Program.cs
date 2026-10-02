@@ -37,6 +37,17 @@ namespace Lab04
             bool volumeOk = double.TryParse(Console.ReadLine(), out double volume);
             Console.WriteLine($"Valid input: {volumeOk}");
             Console.WriteLine($"Volume: {volume}");
+
+            Console.WriteLine("+------------------------------+");
+            Console.WriteLine("|         NEW SAVE FILE         |");
+            Console.WriteLine("+------------------------------+");
+            Console.Write("Enter save name: ");
+            string saveName = Console.ReadLine();
+            Console.Write("Choose save slot (1-3): ");
+            bool slotOk = int.TryParse(Console.ReadLine(), out int slot);
+            Console.WriteLine($"Save name: {saveName}");
+            Console.WriteLine($"Valid input: {slotOk}");
+            Console.WriteLine($"Slot: {slot}");
         }
     }
 }
