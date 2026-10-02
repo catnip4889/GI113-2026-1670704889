@@ -22,6 +22,15 @@ namespace Lab03
             double critMultiplier = 1.75;
             bool isBoss = true;
 
+            Console.WriteLine($"===== KIRIN SAVE CONVERTER =====");
+            Console.WriteLine($"Name: {bossName}");
+            Console.WriteLine($"Rank: {rank}");
+            Console.WriteLine($"Level: {level} / {MaxLevel}");
+            Console.WriteLine($"HP: {currentHp} / {maxHp}");
+            Console.WriteLine($"Attack Power: {attackPower}");
+            Console.WriteLine($"Crit Multiplier: {critMultiplier}");
+            Console.WriteLine($"Is Boss: {isBoss}\n");
+
 
         }
     }
