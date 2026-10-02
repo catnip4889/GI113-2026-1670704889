@@ -11,9 +11,9 @@ namespace Assignment02
     {
         static void Main(string[] args)
         {
-            const string MaterialName = "Iron";
-            const double SmeltRate = 0.2500;
-            const double SalvageRate = 0.3000;
+            const string MaterialName = "Moon Crystal";
+            const double SmeltRate = 0.4000;
+            const double SalvageRate = 0.5000;
             const double MaxBatch = 500.0;
 
             Console.WriteLine("------------------------------------");
